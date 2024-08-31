@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AltSchool Africa Courses</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #007bff;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #d1e7dd;
+        }
+
+        main {
+            margin-top: 60px; /* Adjust based on nav height */
+            padding: 20px;
+            flex: 1;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        caption {
+            font-size: 24px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            table {
+                font-size: 14px;
+                overflow-x: auto;
+                display: block;
+                white-space: nowrap;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Global Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="form.html">Application Form</a></li>
+            <li><a href="course.html">AltSchool Courses</a></li>
+            <li><a href="media.html">Media</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h1>AltSchool Africa Courses</h1>
+
+        <table>
+            <caption>Available Courses</caption>
+            <thead>
+                <tr>
+                    <th>School</th>
+                    <th>Course 1</th>
+                    <th>Course 2</th>
+                    <th>Course 3</th>
+                    <th>Course 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>School of Engineering (SOE)</td>
+                    <td>Frontend Engineering</td>
+                    <td>Backend Engineering</td>
+                    <td>Cloud Engineering</td>
+                    <td>Cybersecurity</td>
+                </tr>
+                <tr>
+                    <td>School of Product (SOP)</td>
+                    <td>Product Design</td>
+                    <td>Product Marketing</td>
+                    <td>Product Management</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>School of Data (SOD)</td>
+                    <td>Data Analysis</td>
+                    <td>Data Science</td>
+                    <td>Data Engineering</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+</body>
+</html>

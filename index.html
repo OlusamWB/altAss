@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100%;
+            background-color: #f9f9f9;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #007bff;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 1200px; /* Optional: Limit nav width for better readability */
+            box-sizing: border-box;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #d1e7dd;
+        }
+
+        section {
+            padding: 20px;
+            margin-top: 60px; /* Adjust based on nav height */
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1200px; /* Same as nav max-width to keep alignment */
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        strong {
+            color: #333;
+        }
+
+        a[href="#top"] {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a[href="#top"]:hover {
+            color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Global Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="form.html">Application Form</a></li>
+            <li><a href="course.html">AltSchool Course</a></li>
+            <li><a href="media.html">Media</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1>My Biography</h1>
+        <p><strong>ALT SCHOOL ID:</strong> ALT/SOE/024/0169</p>
+        <h2>Biography</h2>
+        <p>Hello, my name is Taiwo Olumide Samuel.
+
+            I'm proudly part of the Karatu 2024 set at AltSchool Africa, where I'm pursuing my passion for Front-End Engineering. My student ID is ALT/SOE/024/0169.
+            
+            Since my university days, I've been deeply fascinated by the invisible mechanics of online applications—how to make websites with beautiful animations. This curiosity has driven my desire to become a Front-End engineer.
+            
+            Joining AltSchool feels like the perfect step forward on this journey, and I’m thrilled to be here, diving into the world of backend development.</p>
+        <h2>Why I Joined Alt School</h2>
+        <p>
+            I chose AltSchool Africa because it stands out as a top-tier virtual learning platform on the continent, leading the way in innovative education.
+            
+            The opportunity to learn from world-class instructors is something I value deeply. Their expertise promises to provide me with hands-on training and real-world insights.
+            
+            This guidance will equip me with the skills needed to excel as a proficient and resourceful Front-End developer.
+        </p>
+        <h2>My Goals</h2>
+        <p>
+            My goal is to develop a deep expertise in front-end engineering, enabling me to bring to life the productive apps I've envisioned for my community. I’m committed to honing my skills so I can design intuitive and impactful user experiences. 
+            Additionally, I plan to actively collaborate with my circle members and course mates to create high-quality applications that make a meaningful difference.
+        </p>
+        <p><a href="#top">Scroll to Top</a></p>
+    </section>
+
+    <!-- Scroll to Top -->
+    <div id="top"></div>
+
+</body>
+</html>
