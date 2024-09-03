@@ -54,6 +54,9 @@
             background-color: #fff;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 1000px;
         }
 
         h1 {
@@ -78,9 +81,8 @@
             margin-bottom: 20px;
         }
 
-        img, video, audio {
-            max-width: 100%;
-            height: auto;
+        img, iframe, audio {
+            width: 100%;
             display: block;
             margin-bottom: 20px;
         }
@@ -97,14 +99,14 @@
             border: 1px solid #ddd;
             border-radius: 8px;
         }
-
+    
         @media (max-width: 768px) {
             nav ul {
                 flex-direction: column;
                 align-items: center;
             }
-        }
-    </style>
+
+</style>
 </head>
 <body>
 
@@ -128,14 +130,13 @@
             <img src="./img/tech.jpg" alt="Tech Journey Image">
             
             <h2>Video</h2>
-            <video controls>
-                <source src="your-video-url.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <iframe width="420" height="315"
+                 src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+            </iframe>
             
             <h2>Audio</h2>
             <audio controls>
-                <source src="your-audio-url.mp3" type="audio/mpeg">
+                <source src="horse.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
         </div>
